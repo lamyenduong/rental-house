@@ -1,0 +1,9 @@
+{
+    "General":{
+        "logo": "motel cenper"
+    },
+    "Navbar":{
+        "firstMenuTitle": "Tin nhắn",
+        "secondMenuTitle": "Thêm"
+    }
+}
