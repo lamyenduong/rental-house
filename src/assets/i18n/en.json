@@ -1,0 +1,21 @@
+{
+    "General": {
+        "logo": "motel cenper"
+    },
+    "Navbar": {
+        "firstMenuTitle": "message",
+        "secondMenuTitle": "more"
+    },
+    "ButtonLabel": {
+        "login": "login"
+    },
+    "LoginPage": {
+        "firstTitle": "login",
+        "secondTitle": "welcome to",
+        "forgotMessage": "forgot password?"
+    },
+    "InputPlaceholder": {
+        "username": "Username",
+        "password": "Password"
+    }
+}

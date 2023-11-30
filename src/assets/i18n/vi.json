@@ -1,9 +1,15 @@
 {
-    "General":{
+    "General": {
         "logo": "motel cenper"
     },
-    "Navbar":{
+    "Navbar": {
         "firstMenuTitle": "Tin nhắn",
         "secondMenuTitle": "Thêm"
+    },
+    "ButtonLabel": {
+        "login": "Đăng nhập"
+    },
+    "LoginPage": {
+        "title": "Chào mừng đến với"
     }
 }

@@ -1,4 +1,4 @@
-import {cva} from "class-variance-authority";
+import { cva } from "class-variance-authority";
 
 export const ButtonStyles = cva(
   ["transition-opacity", "hover:opacity-90", "cursor-pointer"],
