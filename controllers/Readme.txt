@@ -1,1 +1,0 @@
-Call function and handle data from core and return data to views
