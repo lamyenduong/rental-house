@@ -1,0 +1,1 @@
+Styling custom for elements repeat
