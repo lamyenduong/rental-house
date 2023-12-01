@@ -1,1 +1,0 @@
-Outside of 2 others folder only storage files before user authorized
