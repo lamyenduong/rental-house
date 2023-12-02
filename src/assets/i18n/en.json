@@ -1,21 +1,38 @@
 {
-    "General": {
-        "logo": "motel cenper"
-    },
-    "Navbar": {
-        "firstMenuTitle": "message",
-        "secondMenuTitle": "more"
-    },
-    "ButtonLabel": {
-        "login": "login"
-    },
-    "LoginPage": {
-        "firstTitle": "login",
-        "secondTitle": "welcome to",
-        "forgotMessage": "forgot password?"
-    },
-    "InputPlaceholder": {
-        "username": "Username",
-        "password": "Password"
-    }
+  "General": {
+    "logo": "motel cenper"
+  },
+  "Navbar": {
+    "firstMenuTitle": "message",
+    "secondMenuTitle": "more",
+    "thirdMenuTitle": "username",
+    "fourthMenuTitle": "role"
+  },
+  "ButtonLabel": {
+    "login": "login"
+  },
+  "LoginPage": {
+    "firstTitle": "login",
+    "secondTitle": "welcome to",
+    "forgotMessage": "forgot password?"
+  },
+  "InputPlaceholder": {
+    "username": "Username",
+    "password": "Password",
+    "search": "Search"
+  },
+  "ContentOwner": {
+    "home": "Home",
+    "statistics": "Statistics",
+    "suites": "Suites",
+    "notification": "Notifications",
+    "available": "Available Rooms",
+    "rented": "Rented Rooms",
+    "new_suite": "New Suite",
+    "desc_stat": "See more about statistic",
+    "desc_suite": "List of rooms in suites",
+    "desc_notifications": "Reports of tenants",
+    "desc_avail": "List of available rooms",
+    "desc_rented": "List of rented rooms"
+  }
 }

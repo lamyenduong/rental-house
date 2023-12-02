@@ -1,15 +1,33 @@
 {
-    "General": {
-        "logo": "motel cenper"
-    },
-    "Navbar": {
-        "firstMenuTitle": "Tin nhắn",
-        "secondMenuTitle": "Thêm"
-    },
-    "ButtonLabel": {
-        "login": "Đăng nhập"
-    },
-    "LoginPage": {
-        "title": "Chào mừng đến với"
-    }
+  "General": {
+    "logo": "motel cenper"
+  },
+  "Navbar": {
+    "firstMenuTitle": "Tin nhắn",
+    "secondMenuTitle": "Thêm",
+    "thirdMenuTitle": "Tên Đăng Nhập",
+    "fourthMenuTitle": "Vai Trò"
+  },
+  "ButtonLabel": {
+    "login": "Đăng nhập"
+  },
+  "LoginPage": {
+    "firstTitle": "Đăng Nhập",
+    "secondTitle": "Chào Mừng Đến Với",
+    "forgotMessage": "Quên Mật Khẩu?"
+  },
+  "InputPlaceholder": {
+    "username": "Tên Đăng Nhập",
+    "password": "Mật Khẩu",
+    "search": "Tìm Kiếm"
+  },
+  "ContentOwner": {
+    "home": "Trang chủ",
+    "statistics": "Thống kê",
+    "suites": "Dãy phòng",
+    "notification": "Thông báo",
+    "available": "Phòng khả dụng",
+    "rented": "Phòng đã thuê",
+    "new_suite": "Tạo dãy phòng"
+  }
 }
