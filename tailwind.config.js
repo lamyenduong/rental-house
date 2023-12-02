@@ -1,4 +1,4 @@
-import colors from "tailwindcss/colors";
+import plugin from "tailwindcss";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -24,5 +24,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };

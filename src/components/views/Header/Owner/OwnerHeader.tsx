@@ -1,14 +1,18 @@
 import React from "react";
-import Logo from "../../../../assets/images/Logo.png";
+import Logo from "../../../../assets/images/logo.png";
 import {ChevronDown, LogOut, Menu} from "lucide-react";
 import Input from "../../../master-components/Input";
 import {Colors} from "../../../common/commons";
 import Button from "../../../master-components/Button";
+import {useTranslation} from "react-i18next";
 
 const OwnerHeader = () => {
   const handleReload = () => {
     window.location.reload();
   };
+
+  const {t} = useTranslation();
+
   return (
     <div className=" z-50 relative bg-white flex flex-shrink-0 overflow-hidden flex-row justify-between items-center pl-2 pr-2 lg:pl-28 lg:pr-28 h-16 border-b-2 border-green">
       <div
@@ -19,7 +23,7 @@ const OwnerHeader = () => {
       >
         <img src={Logo} className="h-9" alt="Logo" />
         <span className="text-center text-lg text-blackish_gray uppercase tracking-tight">
-          Motel CenPer
+          {t(`General.logo`)}
         </span>
       </div>
       <Button
@@ -31,29 +35,29 @@ const OwnerHeader = () => {
       <div className="hidden lg:flex flex-shrink-0 flex-row justify-end items-center h-full">
         <div className="cursor-pointer flex flex-shrink-0 flex-row gap-2 justify-center items-center h-full pl-2 pr-2 hover:bg-light_gray transition-colors">
           <span className="text-center text-lg text-blackish_gray uppercase tracking-tight font-semibold">
-            Username
+            {t(`Navbar.thirdMenuTitle`)}
           </span>
           <hr className="w-7 bg-blackish_gray text-blackish_gray rotate-90 h-1.5" />
           <span className="text-center text-lg text-blackish_gray uppercase tracking-tight font-semibold">
-            Role
+            {t(`Navbar.fourthMenuTitle`)}
           </span>
         </div>
         <div className="cursor-pointer flex flex-shrink-0 flex-row gap-1 justify-center items-center h-full pl-2 pr-2 hover:bg-light_gray transition-colors">
           <span className="text-center text-lg text-blackish_gray uppercase tracking-tight">
-            Message
+            {t(`Navbar.firstMenuTitle`)}
           </span>
           <ChevronDown color={Colors.blackish_gray} />
         </div>
         <div className="cursor-pointer flex flex-shrink-0 flex-row gap-1 justify-center items-center h-full pl-2 pr-2 hover:bg-light_gray transition-colors">
           <span className="text-center text-lg text-blackish_gray uppercase tracking-tight">
-            More
+            {t(`Navbar.secondMenuTitle`)}
           </span>
           <ChevronDown color={Colors.blackish_gray} />
         </div>
         <div className="flex flex-shrink-0 flex-row justify-end items-center h-full pl-2 pr-2">
           <Input
             variant="secondary"
-            placeholder="Search"
+            placeholder={t(`InputPlaceholder.search`)}
             className="text-blackish_gray"
           />
         </div>
