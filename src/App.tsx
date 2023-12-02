@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import "../src/i18n";
 import Content from "./components/views/Contents/Content";
 import Header from "./components/views/Header/Header";
-import { GetModeForAuthorized } from "./components/controllers/Core/Authentication";
-import { Authentication } from "./components/common/commons";
 import Login from "./components/views/Login/Login";
 import { AccessProps, ModeProps } from "./components/models/AuthenticaitonsModel";
 
@@ -26,7 +24,9 @@ const App = () => {
     </div>
   ) : (
     <div className="w-full flex flex-col flex-shrink-0">
-      <Login checkAuth={setAuth} />
+      <Login />
     </div>
   );
 };
+
+export default App

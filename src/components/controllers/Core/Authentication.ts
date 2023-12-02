@@ -1,5 +1,5 @@
-import {useState} from "react";
-import {Authentication} from "../../common/commons";
+import { useState } from "react";
+import { Authentication } from "../../common/commons";
 import {
   AccessProps,
   AuthProps,
@@ -20,5 +20,5 @@ export const GetAuthorized = (
   setIsMode(Authentication.isTenantsMode.toString());
   setIsLoggedIn(true);
   //do sth
-  return {isLoggedIn, isMode};
+  return { isLoggedIn, isMode };
 };
