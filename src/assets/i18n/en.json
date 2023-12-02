@@ -12,6 +12,7 @@
     "LoginPage": {
         "firstTitle": "login",
         "secondTitle": "welcome to",
+        "thirdTitle": "reset password",
         "forgotMessage": "forgot password?"
     },
     "InputPlaceholder": {
