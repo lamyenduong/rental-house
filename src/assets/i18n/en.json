@@ -9,18 +9,24 @@
     "fourthMenuTitle": "role"
   },
   "ButtonLabel": {
-    "login": "login"
+    "login": "login",
+    "confirm": "confirm"
   },
   "LoginPage": {
     "firstTitle": "login",
     "secondTitle": "welcome to",
     "thirdTitle": "reset password",
-    "forgotMessage": "forgot password?"
+    "fourthTitle": "verify code",
+    "forgotMessage": "forgot password?",
+    "resetMessage": "Please enter your e-mail to reset your password:",
+    "verifyMessage": "Please enter code sent to your e-mail:"
   },
   "InputPlaceholder": {
     "username": "Username",
     "password": "Password",
-    "search": "Search"
+    "search": "Search",
+    "email": "Email",
+    "code": "Verify code"
   },
   "ContentOwner": {
     "home": "Home",

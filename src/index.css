@@ -13,7 +13,6 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  height: calc(100vh - (var(--vh-offset, 0px)));
 }
 
 code {

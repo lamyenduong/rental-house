@@ -1,8 +1,8 @@
-import React from "react";
-import {InputStyles} from "../styles/Styles";
-import {InputProps} from "../models/InputModel";
+import React, { forwardRef } from "react";
+import { InputStyles } from "../styles/Styles";
+import { InputProps } from "../models/InputModel";
 
-const Input = ({
+const Input = forwardRef<HTMLInputElement, InputProps>(({
   variant,
   className,
   placeholder,
@@ -10,17 +10,18 @@ const Input = ({
   type,
   readOnly,
   ...props
-}: InputProps) => {
+}: InputProps, ref) => {
   return (
     <input
       {...props}
-      className={InputStyles({variant, className})}
+      ref={ref}
+      className={InputStyles({ variant, className })}
       placeholder={placeholder}
       value={value}
       readOnly={readOnly}
       type={type}
     />
   );
-};
+});
 
 export default Input;

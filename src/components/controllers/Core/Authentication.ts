@@ -6,7 +6,7 @@ import {
   ModeProps,
   PasswordProps,
   UsernameProps,
-} from "../../models/AuthenticaitonsModel";
+} from "../../models/AuthenticationsModel";
 
 export const GetAuthorized = (
   username: UsernameProps,
