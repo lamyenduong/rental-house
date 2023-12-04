@@ -1,6 +1,6 @@
-import {BadgeCheck, BadgeX, Bell, Grid, LineChart} from "lucide-react";
-import {Colors, Navigator} from "../common/commons";
-import {ContentNavigatorProps} from "../models/ContentModel";
+import { BadgeCheck, BadgeX, Bell, Grid, LineChart } from "lucide-react";
+import { Colors, Navigator } from "../common/commons";
+import { ContentNavigatorProps } from "../models/ContentModel";
 import Statistics from "../views/Contents/Owner/pages/Statistics";
 import HomePage from "../views/Contents/Owner/pages/Home";
 import Suites from "../views/Contents/Owner/pages/Suites";
@@ -8,7 +8,7 @@ import Notifications from "../views/Contents/Owner/pages/Notifications";
 import AvailableRooms from "../views/Contents/Owner/pages/AvailableRooms";
 import RentedRoom from "../views/Contents/Owner/pages/RentedRoom";
 
-const ContentController = (props: {value: ContentNavigatorProps}) => {
+const ContentController = (props: { value: ContentNavigatorProps }) => {
   if (props.value === Navigator.statistics) {
     return <Statistics />;
   }

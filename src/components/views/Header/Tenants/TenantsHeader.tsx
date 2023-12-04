@@ -1,7 +1,7 @@
-import {LogOut, Menu} from "lucide-react";
-import {Colors} from "../../../common/commons";
+import { LogOut, Menu } from "lucide-react";
+import { Colors } from "../../../common/commons";
 import Button from "../../../master-components/Button";
-import Logo from "../../../../assets/images/logo.png";
+import Logo from "../../../../assets/images/Logo.png";
 
 const TenantsHeader = () => {
   const handleReload = () => {
