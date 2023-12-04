@@ -1,9 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../src/i18n";
 import Content from "./components/views/Contents/Content";
 import Header from "./components/views/Header/Header";
 import Login from "./components/views/Login/Login";
-import { AccessProps, ModeProps } from "./components/models/AuthenticationsModel";
+import { AccessProps, AuthProps, ModeProps } from "./components/models/AuthenticationsModel";
 import Verify from "./components/views/Login/Verify";
 
 const App = () => {
@@ -30,4 +30,4 @@ const App = () => {
   );
 };
 
-export default App
+export default App;

@@ -1,9 +1,6 @@
-import { useState } from "react";
-import { Authentication } from "../../common/commons";
+import {Authentication} from "../../common/commons";
 import {
-  AccessProps,
   AuthProps,
-  ModeProps,
   PasswordProps,
   UsernameProps,
 } from "../../models/AuthenticationsModel";
@@ -12,13 +9,9 @@ export const GetAuthorized = (
   username: UsernameProps,
   password: PasswordProps
 ): AuthProps => {
-  const [isMode, setIsMode] = useState<ModeProps>(
-    Authentication.isTenantsMode.toString()
-  ); //default is tenant mode
-  const [isLoggedIn, setIsLoggedIn] = useState<AccessProps>(false);
+  let isMode = Authentication.isTenantsMode.toString();
 
-  setIsMode(Authentication.isTenantsMode.toString());
-  setIsLoggedIn(true);
+  let isLoggedIn = true;
   //do sth
-  return { isLoggedIn, isMode };
+  return {isLoggedIn, isMode};
 };

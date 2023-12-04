@@ -12,30 +12,12 @@ const Login = () => {
   const [isResetPassword, setIsResetPassword] = useState(false)
   const { t } = useTranslation();
 
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-
-  const handleUsername = (event: any) => {
-    setUsername(event.target.value);
-  };
-
-  const handlePassword = (event: any) => {
-    setPassword(event.target.value);
-  };
-
-  const authResult = GetAuthorized(username, password)
-
-  function checkAuth() {
-    return authResult
-  }
-
   const handleResetClick = (event: any) => {
     event.preventDefault()
     setIsResetPassword(true)
   };
 
-  const handleResetClickBack = (event: any) => {
-    event.preventDefault()
+  const handleResetClickBack = () => {
     setIsResetPassword(false)
   };
 
@@ -57,19 +39,19 @@ const Login = () => {
           </div>
         ) :
           (
-            <div className='relative flex-1 text-center w-1/2 m-auto'>
+            <div className='relative flex-1 text-center w-1/2'>
               <div className='uppercase text-2xl mb-8'>{t(`LoginPage.firstTitle`)}</div>
-              <div className='mb-5 w-2/3 mx-auto'><Input placeholder={t(`InputPlaceholder.username`)} onChange={handleUsername} /></div>
-              <div className='w-2/3 mx-auto'><Input type='password' placeholder={t(`InputPlaceholder.password`)} onChange={handlePassword} /></div>
+              <div className='mb-5 w-2/3 mx-auto'><Input placeholder={t(`InputPlaceholder.username`)} /></div>
+              <div className='w-2/3 mx-auto'><Input placeholder={t(`InputPlaceholder.password`)} /></div>
               <div className='w-2/3 text-right mt-3 mx-auto'><a style={{ color: Colors.newgrowth }} className='capitalize' href='/' onClick={handleResetClick}>{t(`LoginPage.forgotMessage`)}</a></div>
-              <div className='mt-3 w-2/3 mx-auto'><Button className='uppercase' variant='default' onClick={checkAuth}>{t(`ButtonLabel.login`)}</Button></div>
+              <div className='mt-3 w-2/3 mx-auto'><Button className='uppercase' variant='default'>{t(`ButtonLabel.login`)}</Button></div>
             </div>
           )
         }
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Login
 
