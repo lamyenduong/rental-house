@@ -3,18 +3,15 @@ import "../src/i18n";
 import Content from "./components/views/Contents/Content";
 import Header from "./components/views/Header/Header";
 import Login from "./components/views/Login/Login";
-import { AccessProps, AuthProps, ModeProps } from "./components/models/AuthenticationsModel";
-import Verify from "./components/views/Login/Verify";
+import { AuthProps } from "./components/models/AuthenticationsModel";
 
 const App = () => {
   const [isShow, setIsShow] = useState(false); //is logged in?
 
   const [value, setValue] = useState(""); //mode user
 
-  // useEffect(() => { });
-
-  const setAuth = (isLogIn: AccessProps, isMode: ModeProps) => {
-    setIsShow(isLogIn);
+  const setAuth = ({ isLoggedIn, isMode }: AuthProps) => {
+    setIsShow(isLoggedIn);
     setValue(isMode);
   };
 
