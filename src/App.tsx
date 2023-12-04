@@ -1,19 +1,17 @@
-import { useEffect, useState } from "react";
+import {useState} from "react";
 import "../src/i18n";
 import Content from "./components/views/Contents/Content";
 import Header from "./components/views/Header/Header";
 import Login from "./components/views/Login/Login";
-import { AccessProps, ModeProps } from "./components/models/AuthenticaitonsModel";
+import {AuthProps} from "./components/models/AuthenticaitonsModel";
 
 const App = () => {
   const [isShow, setIsShow] = useState(false); //is logged in?
 
   const [value, setValue] = useState(""); //mode user
 
-  useEffect(() => { });
-
-  const setAuth = (isLogIn: AccessProps, isMode: ModeProps) => {
-    setIsShow(isLogIn);
+  const setAuth = ({isLoggedIn, isMode}: AuthProps) => {
+    setIsShow(isLoggedIn);
     setValue(isMode);
   };
 
@@ -24,9 +22,9 @@ const App = () => {
     </div>
   ) : (
     <div className="w-full flex flex-col flex-shrink-0">
-      <Login />
+      <Login checkAuth={setAuth} />
     </div>
   );
 };
 
-export default App
+export default App;
