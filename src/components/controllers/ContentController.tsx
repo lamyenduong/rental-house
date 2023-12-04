@@ -7,7 +7,6 @@ import Suites from "../views/Contents/Owner/pages/Suites";
 import Notifications from "../views/Contents/Owner/pages/Notifications";
 import AvailableRooms from "../views/Contents/Owner/pages/AvailableRooms";
 import RentedRoom from "../views/Contents/Owner/pages/RentedRoom";
-import { useTranslation } from "react-i18next";
 
 const ContentController = (props: {value: ContentNavigatorProps}) => {
   if (props.value === Navigator.statistics) {
@@ -29,7 +28,6 @@ const ContentController = (props: {value: ContentNavigatorProps}) => {
   return <HomePage />;
 };
 export default ContentController;
-
 
 export const SidebarItemsList = [
   {

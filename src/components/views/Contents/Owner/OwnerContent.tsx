@@ -127,7 +127,7 @@ const OwnerContent = () => {
                 (position * 100) / totalNumberOfItems
               }%)`,
             }}
-            className="pl-4 pr-4 lg:h-full flex lg:w-full flex-shrink-0 scrollbar-hide lg:flex-col flex-row justify-start items-center top-0 lg:pt-4 lg:pl-5 lg:pr-5 bg-slate-300 transition-transform ease-in-out duration-300"
+            className="pl-4 pr-4 lg:h-full flex lg:w-full flex-shrink-0 scrollbar-hide lg:flex-col flex-row justify-start items-center top-0 lg:pt-4 lg:pl-5 lg:pr-5 transition-transform ease-in-out duration-300"
           >
             {SidebarItemsList.map((item, index) => {
               return (
