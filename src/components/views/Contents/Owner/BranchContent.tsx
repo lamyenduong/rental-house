@@ -23,6 +23,11 @@ const BranchContent: React.FC<FunctionToData> = ({contentReturnData}) => {
     visibility: "hidden",
   }));
 
+  const [styleAdd, setAdd] = useSpring(() => ({
+    opacity: 0,
+    visibility: "hidden",
+  }));
+
   const [name, setName] = useState("");
   const [suite, setSuite] = useState(0);
   const [room, setRoom] = useState(0);
@@ -77,14 +82,14 @@ const BranchContent: React.FC<FunctionToData> = ({contentReturnData}) => {
     setIsShow(true);
   };
 
-  //detail handle action add popup
+  //add handle action add popup
   const handleAddOpenClick = () => {
-    set({opacity: 1, visibility: "visible"});
+    setAdd({opacity: 1, visibility: "visible"});
     setIsAddShow(true);
   };
 
   const handleAddCloseClick = () => {
-    set({opacity: 0, visibility: "hidden"});
+    setAdd({opacity: 0, visibility: "hidden"});
     setIsAddShow(true);
   };
 
@@ -109,7 +114,7 @@ const BranchContent: React.FC<FunctionToData> = ({contentReturnData}) => {
       )}
       {isAddShow === Boolean(ShowOrHide.show) && (
         <animated.div
-          style={style as unknown as React.CSSProperties}
+          style={styleAdd as unknown as React.CSSProperties}
           className="popup-overlay w-full absolute top-0 z-50 "
           onClick={handleAddPopupClick}
         >
