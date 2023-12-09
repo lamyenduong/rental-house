@@ -17,6 +17,11 @@ export const enum AccessSession {
   isLogOut = 1,
 }
 
+export const enum ShowOrHide {
+  show = 1,
+  hide = 0,
+}
+
 export const enum Navigator {
   home = 0,
   statistics = 1,

@@ -26,9 +26,17 @@
     "password": "Password",
     "search": "Search",
     "email": "Email",
-    "code": "Verify code"
+    "code": "Verify code",
+    "name": "Name: ",
+    "suite_numbers": "No. of Suite: ",
+    "address": "Address: ",
+    "price_energy": "Energy price: ",
+    "price_water": "Water price: ",
+    "price_net": "Internet price: ",
+    "price_service": "Service price: "
   },
   "ContentOwner": {
+    "branch": "Branchs",
     "home": "Home",
     "statistics": "Statistics",
     "suites": "Suites",
@@ -41,5 +49,19 @@
     "desc_notifications": "Reports of tenants",
     "desc_avail": "List of available rooms",
     "desc_rented": "List of rented rooms"
+  },
+  "Element": {
+    "add_new_one": "Add new one",
+    "name": "Name: ",
+    "suite_numbers": "No. of Suite: ",
+    "room_numbers": "No. of Room: ",
+    "address": "Address: ",
+    "more": "More details",
+    "lets_go": "Let's go",
+    "detail_branch": "Branch Details",
+    "price_energy": "Energy price: ",
+    "price_water": "Water price: ",
+    "price_net": "Internet price: ",
+    "price_service": "Service price: "
   }
 }

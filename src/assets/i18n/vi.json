@@ -19,9 +19,19 @@
   "InputPlaceholder": {
     "username": "Tên Đăng Nhập",
     "password": "Mật Khẩu",
-    "search": "Tìm Kiếm"
+    "search": "Tìm Kiếm",
+    "email": "Email",
+    "code": "Mã xác thực",
+    "name": "Tên: ",
+    "suite_numbers": "Số dãy phòng: ",
+    "address": "Địa chỉ: ",
+    "price_energy": "Giá điện: ",
+    "price_water": "Giá nước: ",
+    "price_net": "Giá internet: ",
+    "price_service": "Giá dịch vụ: "
   },
   "ContentOwner": {
+    "branch": "Chi nhánh",
     "home": "Trang chủ",
     "statistics": "Thống kê",
     "suites": "Dãy phòng",
@@ -29,5 +39,19 @@
     "available": "Phòng khả dụng",
     "rented": "Phòng đã thuê",
     "new_suite": "Tạo dãy phòng"
+  },
+  "Element": {
+    "add_new_one": "Thêm mới",
+    "name": "Tên: ",
+    "suite_numbers": "Số dãy phòng: ",
+    "room_numbers": "Số phòng: ",
+    "address": "Địa chỉ: ",
+    "more": "Chi tiết",
+    "lets_go": "Vào",
+    "detail_branch": "Chi tiết chi nhánh",
+    "price_energy": "Giá điện: ",
+    "price_water": "Giá nước: ",
+    "price_net": "Giá internet: ",
+    "price_service": "Giá dịch vụ: "
   }
 }

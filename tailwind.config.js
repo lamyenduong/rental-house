@@ -10,6 +10,7 @@ module.exports = {
         newgrowth: "#C6D166",
         blackish_gray: "#333333",
         light_gray: "#D9D9D9",
+        blackist_gray_opacity: "rgba(51, 51, 51, 0.5)",
       },
       boxShadow: {
         around: "0px 0px 1.2rem 0.5px #D9D9D9",

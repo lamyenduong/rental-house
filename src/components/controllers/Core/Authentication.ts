@@ -9,7 +9,7 @@ export const GetAuthorized = (
   username: UsernameProps,
   password: PasswordProps
 ): AuthProps => {
-  let isMode = Authentication.isTenantsMode.toString();
+  let isMode = Authentication.isOwnerMode.toString();
 
   let isLoggedIn = true;
   //do sth

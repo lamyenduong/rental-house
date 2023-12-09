@@ -1,16 +1,16 @@
-import { useState } from "react";
+import {useState} from "react";
 import "../src/i18n";
 import Content from "./components/views/Contents/Content";
 import Header from "./components/views/Header/Header";
 import Login from "./components/views/Login/Login";
-import { AuthProps } from "./components/models/AuthenticationsModel";
+import {AuthProps} from "./components/models/AuthenticationsModel";
 
 const App = () => {
   const [isShow, setIsShow] = useState(false); //is logged in?
 
   const [value, setValue] = useState(""); //mode user
 
-  const setAuth = ({ isLoggedIn, isMode }: AuthProps) => {
+  const setAuth = ({isLoggedIn, isMode}: AuthProps) => {
     setIsShow(isLoggedIn);
     setValue(isMode);
   };

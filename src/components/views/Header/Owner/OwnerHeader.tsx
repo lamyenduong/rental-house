@@ -1,17 +1,17 @@
 import React from "react";
-import Logo from "../../../../assets/images/Logo.png";
-import { ChevronDown, LogOut, Menu } from "lucide-react";
+import Logo from "../../../../assets/images/logo.png";
+import {ChevronDown, LogOut, Menu} from "lucide-react";
 import Input from "../../../master-components/Input";
-import { Colors } from "../../../common/commons";
+import {Colors} from "../../../common/commons";
 import Button from "../../../master-components/Button";
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 
 const OwnerHeader = () => {
   const handleReload = () => {
     window.location.reload();
   };
 
-  const { t } = useTranslation();
+  const {t} = useTranslation();
 
   return (
     <div className=" z-50 relative bg-white flex flex-shrink-0 overflow-hidden flex-row justify-between items-center pl-2 pr-2 lg:pl-28 lg:pr-28 h-16 border-b-2 border-green">
